@@ -1,0 +1,23 @@
+Project 2 - JS APIs and Data
+Objectives
+event handling
+json data
+api consumption
+Project Details
+Create a page that allows a user to enter a zip code. Based on the zip code, the application will render weather data from http://www.geonames.org/.
+Create a free account on http://www.geonames.org/ that allows for api access
+Change your http://www.geonames.org/ account to allow for free service requests
+Create page that has an input field for a zip code along with a "Get Weather" button
+The "Get Weather" button will search http://www.geonames.org/ based on the user-entered zip code. The goal of the zip code based search is to determine the latitude and longitude (use http://api.geonames.org/postalCodeSearchJSON) of the selected zip code as well as grab the city name.
+Once you have retrieved the latitude and longitude coordinates, you can then make an additional request to http://www.geonames.org/. The follow up request (use http://api.geonames.org/findNearByWeatherJSON) will gather a weather observation that includes temperature and wind information.
+The temperature reading is in Celsius. You should convert the temperature to Farenheit. If the Farenheit temperature is 34° or colder, you should add a cold icon to the ouput (next to the temperature). If the Farenheit temperature is 83° or warmer, you should add a hot icon to the output (next to the temperature).
+If wind conditions are greater than 15 mph. you should a wind icon next to the wind conditions.
+An example user interface without results.
+example user interface
+An example detailed user interface with results.
+example detailed user interface
+What did I learn?
+javascript event handling
+performing api requests
+working with JSON data
+working with asynchronous requests
